@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Email</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .item-order-row p {
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        @media screen and (max-width: 600px) {
+            .item-order-row img {
+                max-width: 400px;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .container {
+                width: 100%;
+            }
+
+            .header {
+                padding: 10px 5px !important;
+            }
+
+            .logo {
+                width: 100%;
+                height: auto;
+            }
+
+            .left-column {
+                width: 100%;
+            }
+
+            .left-column h4 {
+                text-align: center;
+            }
+
+            .right-column {
+                width: 100%;
+                padding: 0 20px;
+            }
+
+            .right-column h4 {
+                text-align: center;
+            }
+
+            .order-confirm-table a {
+                font-size: 24px !important;
+                display: block;
+                border-radius: 15px !important;
+            }
+
+            .items-order-table p {
+                font-size: 18px !important;
+            }
+
+            .price-table .left-column {
+                text-align-last: left;
+                width: 50%;
+                font-size: 20px;
+                padding-left: 15px;
+            }
+
+            .price-table .right-column {
+                text-align-last: right;
+                width: 50%;
+                font-size: 20px;
+            }
+
+            .item-order-row img {
+                width: 100%;
+                padding-right: 10px !important;
+            }
+
+            .order-shipping-table h3 {
+                font-size: 32px !important;
+            }
+
+            .order-shipping-table h2 {
+                font-size: 24px !important;
+            }
+
+            .order-shipping-table p {
+                font-size: 16px !important;
+            }
+
+            .customer-support-table h4 {
+                font-size: 24px !important;
+            }
+
+            .customer-support-table p,
+            .customer-support-table a {
+                font-size: 16px !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            .footer a {
+                font-size: 20px !important;
+            }
+
+            .footer .icon-table img {
+                height: 40px;
+                width: 40px;
+            }
+
+            .footer p {
+                font-size: 20px !important;
+            }
+
+            .footer .subscribe {
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="background: #ddd;">
+    <!-- Start of email -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <!-- start of container -->
+                <table class="container" width="600px" border="0" align="center" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <table class="header" width="100%" style="background-color: #000; padding: 20px;">
+                                <tr>
+                                    <td align="center">
+                                        <img src="/img/logo.png" alt="image of logo" class="logo" height="125px">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- start of order confirm -->
+                    <tr>
+                        <td>
+                            <table class="order-confirm-table" width="100%"
+                                style="background: #ffcc99; background-color: #ffcc99; padding: 20px;">
+                                <tr>
+                                    <td align="center">
+                                        <h2 style="font-family: 'Lucida Sans', 'HelveticaNeue-Light' , 'Helvetica Neue Light'
+                                        , 'Helvetica Neue' , Helvetica, Arial, 'Lucida Grande' , 'sans-serif'; color:#242424;
+                                        font-weight: 600; font-size: 30px; margin: 0;">
+                                            Your
+                                            order is confirmed.</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <p style="color: #242424; padding: 0 0 0 10px; line-height: 1.5;
+                                         font-family: 'Lucida Sans', 'HelveticaNeue-Light' , 'Helvetica Neue Light'
+                           , 'Helvetica Neue' , Helvetica, Arial, 'Lucida Grande' , 'sans-serif';">
+                                            Hi Josh, we've received order № A12094653 and are working on it now. <br>
+                                            We'll email you an update when we've shipped it.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 15px 10px;">
+                                        <a href="#"
+                                            style="border-radius: 25px; background-color: #191919; background: #191919; color: #fff; padding: 10px 35px; text-decoration: none; font-size: 18px;
+                                            font-family: 'Lucida Sans', 'HelveticaNeue-Light' , 'Helvetica Neue Light'
+                           , 'Helvetica Neue' , Helvetica, Arial, 'Lucida Grande' , 'sans-serif'; font-weight: 600;">View
+                                            your order details</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- end of order confirm -->
+
+                    <!-- start of items order -->
+                    <tr>
+                        <td class="item-order-row">
+                            <table class="items-order-table" width="100%"
+                                style="padding: 0 0 30px; background-color: #f8f8f8;">
+                                <tr>
+                                    <td>
+                                        <h2 style="text-align: center; padding: 10px;">Items ordered</h2>
+                                        <table class="left-column" width="50%" align="left">
+                                            <tr>
+                                                <td align="center">
+                                                    <img src="/img/phone.png" width="103px" alt="image of phone">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="right-column" width="50%" align="right">
+                                            <tr>
+                                                <td style="color: #333; font-family: 'Arial'
+                                                    , 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue'
+                                                    , Helvetica, Arial, 'Lucida Grande' , 'sans-serif';">
+                                                    <p>
+                                                        <strong>iPhone 6s</strong></p>
+                                                    <p>Memory: 32GB</p>
+                                                    <p>Color: Space Gray</p>
+                                                    <p>New iSight 12-megapixel camera</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td
+                                                    style="color: #333; font-family: 'Arial'
+                                                , 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue'
+                                                , Helvetica, Arial, 'Lucida Grande' , 'sans-serif'; padding: 20px 0 0;">
+                                                    <p><span style="font-weight: 600;">Item Price: </span>$300</p>
+                                                    <p><span style="font-weight: 600;">Qty: </span>2</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- end of items order -->
+
+
+
+                    <!-- start of price details -->
+                    <tr>
+                        <td>
+                            <table class="price-table" width="100%" style="background-color: #f8f8f8;">
+                                <tr>
+                                    <td>
+                                        <table class="left-column" width="50%" align="left">
+                                            <tr>
+                                                <td align="center" style="color: #333; font-family: 'Arial'
+                                                , 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue'
+                                                , Helvetica, Arial, 'Lucida Grande' , 'sans-serif';">
+                                                    <p><strong>Subtotal:</strong></p>
+                                                    <p><strong>Shipping:</strong></p>
+                                                    <p><strong>Sales Tax:</strong></p>
+                                                    <h4 style=" font-size: 18px;"><strong>Order Total:</strong></h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="right-column" width="50%" align="right">
+                                            <tr>
+                                                <td align="center" style="color: #333; font-family: 'Arial'
+                                                , 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue'
+                                                , Helvetica, Arial, 'Lucida Grande' , 'sans-serif';">
+                                                    <p><strong>$600.00</strong></p>
+                                                    <p><strong style=" margin-left: 15px;">$4.98</strong></p>
+                                                    <p><strong style="margin-left: 15px;">$1.00</strong></p>
+                                                    <h4 style="font-size: 18px;"><strong>$605.98</strong></h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- end of price details -->
+
+                    <!-- start of order & shipping -->
+                    <tr>
+                        <td>
+                            <table class="order-shipping-table" width="100%"
+                                style="background: #eee; background-color: #eee;">
+                                <tr>
+                                    <td align="center">
+                                        <h3
+                                            style="color: #191919; font-family: 'Arial'
+                                        , 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue'
+                                        , Helvetica, Arial, 'Lucida Grande' , 'sans-serif'; font-size: 24px; font-weight: 300;">
+                                            Order
+                                            & shipping info</h3>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <table class="left-column" width="50%" align="left">
+                                            <tr>
+                                                <td
+                                                    style="color: #242424; font-family: 'Arial'
+                                                , 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue'
+                                                , Helvetica, Arial, 'Lucida Grande' , 'sans-serif'; padding: 0 20px; font-size: 14px;">
+                                                    <h4 style="font-size: 20px;">Order details</h4>
+                                                    <p><strong>Order №: </strong>A12094653</p>
+                                                    <p><strong>Member №: </strong>213983</p>
+                                                    <p><strong>Shipping Method: </strong>Standard</p>
+                                                    <p><strong>Order date: </strong>04/07/2016</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="right-column" width="50%" align="right">
+                                            <tr>
+                                                <td style="color: #242424; font-family: 'Arial'
+                                                , 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue'
+                                                , Helvetica, Arial, 'Lucida Grande' , 'sans-serif'; font-size: 14px;">
+                                                    <h4 style="font-size: 20px;">Shipping Address</h4>
+                                                    <p>Josh Makwey</p>
+                                                    <p>96 Wiilmedrie St</p>
+                                                    <p>San jose, CA 95987</p>
+                                                    <p>Estimated delivery: 04/10/16 - 04/14/16</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- end of order & shipping -->
+
+                    <!-- start of customer support -->
+                    <tr>
+                        <td>
+                            <table class="customer-support-table" width="100%"
+                                style="background-color: #f8f8f8; padding: 25px 20px 30px;">
+                                <tr>
+                                    <td>
+                                        <table class="left-column" width="50%" align="left" style="color: #242424; font-family: 'Arial'
+                                        , 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue'
+                                        , Helvetica, Arial, 'Lucida Grande' , 'sans-serif'; padding: 0 35px;">
+                                            <tr>
+                                                <td align="center">
+                                                    <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 10px;">
+                                                        We're here to help
+                                                    </h4>
+
+                                                    <p style=" color: #242424; font-size: 14px;">Call <a href="#"
+                                                            style="color: #3ca7f1; text-decoration: none;">
+                                                            123456789 </a> or <a href="#"
+                                                            style="color: #3ca7f1; text-decoration: none;">visit
+                                                            us
+                                                            online</a>
+                                                        for expert assistance.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table class="right-column" width="50%" align="right" style="color: #242424; font-family: 'Arial'
+                                        , 'HelveticaNeue-Light' , 'Helvetica Neue Light' , 'Helvetica Neue'
+                                        , Helvetica, Arial, 'Lucida Grande' , 'sans-serif'; padding: 0 10px;">
+                                            <tr>
+                                                <td align="center">
+                                                    <h4 style="font-size: 20px; font-weight: 600; margin-bottom: 10px;">
+                                                        Our guarantee</h4>
+
+                                                    <p style=" color: #242424; font-size: 14px;">Your satisfaction is
+                                                        100% guaranteed. See our <a href="#"
+                                                            style="color: #3ca7f1; text-decoration: none; font-size: 14px;">Returns
+                                                            and
+                                                            Exchanges policy.</a></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- end of customer support -->
+
+                    <!-- start of footer -->
+                    <tr>
+                        <td>
+                            <table class="footer" width="100%"
+                                style="background-color: #242424; background: #242424; padding: 20px 0;">
+                                <tr>
+                                    <td>
+                                        <table class="icon-table" width="250px" align="center" border="0"
+                                            cellspacing="0" cellpadding="0" style="padding: 5px 0;">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="http://www.twitter.com"><img src="/img/twitter_icon.png"
+                                                            alt="image of twitter"></a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="http://www.facebook.com"><img src="/img/facebook_icon.png"
+                                                            alt="image of facebook"></a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="http://www.youtube.com"><img src="/img/youtube_icon.png"
+                                                            alt="image of youtube"></a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="http://www.linkedin.com"><img src="/img/linkedin_icon.png"
+                                                            alt="image of linkedin"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="center">
+                                        <p style="color: #888;">
+                                            <a href="#" style="color: #aaa; text-decoration: none;">Browse all
+                                                products</a>
+                                            <a href="#" style="color: #aaa; margin-left: 10px; text-decoration: none;">
+                                                •Locate store</a></p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="center" style="color: #888;">
+                                        <p style="padding: 0; margin: 0;">Electro, Inc.</p>
+                                        <p style="padding: 0; margin: 0;">62 N. Gilbert, CA 99999</p>
+                                        <p style="padding: 0; margin: 0;"><a href="#"
+                                                style="color: #aaa; text-decoration: none;">123456789</a>
+                                        </p>
+                                        <p style="padding: 0; margin: 0;"><a href="#"
+                                                style="color: #aaa; text-decoration: none;">your@mail.com</a></p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="center">
+                                        <p style="margin: 0; padding: 10px 0 20px;">
+                                            <a href="#"
+                                                style="color: #aaa; font-weight: 600; text-decoration: none;">Unsubscribe</a>
+                                            <a href="#"
+                                                style="color: #aaa; margin-left: 5px; font-weight: 600; text-decoration: none;">•Update
+                                                Preferences</a>
+                                            <a href="#"
+                                                style="color: #aaa; margin-left: 5px; font-weight: 600; text-decoration: none;">Customer
+                                                Support</a>
+                                        </p>
+                                    </td>
+
+                                <tr>
+                                    <td align="center">
+                                        <p class="subscribe"
+                                            style="font-size: 11px; font-style: italic; color: #888; padding: 10px 0; margin: 0;">
+                                            You are receiving
+                                            this email
+                                            because you have
+                                            visited our site or asked us
+                                            about regular newsletter</p>
+                                    </td>
+                                </tr>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- end of footer -->
+
+    </table>
+    <!-- end of container -->
+    </td>
+    </tr>
+    </table>
+    <!-- end of email -->
+</body>
+
+</html>
